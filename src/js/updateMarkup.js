@@ -4,7 +4,6 @@ import cards from '../templates/cards.hbs';
 import { errorNtf } from './notification';
 
 export default function updateMarkup(imageSearch) {
-    const text = `Found ${imageSearch.total} images`;
     const markup = cards(imageSearch);
 
     refs.gallery.insertAdjacentHTML('beforeend', markup);
