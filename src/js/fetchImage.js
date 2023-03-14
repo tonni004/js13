@@ -22,7 +22,6 @@ function searchImg(e) {
     const form = e.currentTarget;
     newService.query = form.elements.query.value;
 
-    loadMoreBtn.hideBtn();
     cleanGallery();
     form.reset();
 
